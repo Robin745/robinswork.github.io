@@ -98,6 +98,7 @@ div{
 }
 .topnav .icon{
 	display:none;
+	background-color: #4CAF50;;
 }
 /** Creating search bar on nav bar */
 .search-container {
