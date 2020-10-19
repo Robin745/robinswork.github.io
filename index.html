@@ -1,0 +1,240 @@
+<!DOCKTYPE html>
+<html lan="en">
+<title>Bismillah</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" style="text/css" href="css/styles.css">
+<link rel="stylesheet"  href="css/all.css">
+<body>
+<div class="clearfix">
+<!--Creating Hoverable Menu -->  
+  <div class="menu">
+     <div class="topnav clearfix" id="myTopnav">
+       <a href="#" class="active">HOME</a>
+       <a href="#band">BAND</a>
+       <a href="#tour">TOUR </a>
+       <a href="#contact">CONTACT</a>
+       <div class="dropdown">
+        <button class="dropbtn">MORE
+		<i class="fas fa-caret-down"></i>
+		</button>
+         <div class="dropdown-content">
+            <a href="#">NEW</a>
+            <a href="#">MIDDLE</a>
+            <a href="#">OLD</a>
+            <a href="#">LAST</a>
+         </div>
+        </div>
+	  <div class="search-container">
+        <a><i class="fa fa-search"></i></a>
+	   </div>
+	  <a href="javascript:void(0);"  class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+  </div>
+<!--Creating Text-Inside Image-->  
+  <div class="container clearfix">
+    <img src="photos/cover.jpg">
+	<div class="textinside"> 
+	  <h3>Los Angeles</h3>
+      <p>We had the best time playing at Venice Beach!</p>
+    </div>
+  </div>
+  
+ <!--Creating Band section -->  
+  <div class="theband clearfix" id="band">
+  
+    <div>
+      <h2>THE BAND</h2>
+  	  <p style="opacity:0.60;">We Love Music</p>
+  	  <p style="text-align:left;">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div>
+	
+      <div class="eachimage">
+          <div class="desc">Name</div>
+         <img src="photos/bandmember.jpg" alt="photo">
+      </div> 
+      
+      <div class="eachimage"> 
+           <div class="desc">Name</div>
+         <img src="photos/bandmember.jpg" alt="photo">
+      </div> 
+      
+      <div class="eachimage"> 
+           <div class="desc">Name</div>
+         <img src="photos/bandmember.jpg" alt="photo">
+      </div>
+   
+    </div>
+ 
+  </div>
+<!--Creating booking section -->  
+  <div style="background:black;width:100%" id="tour">
+  
+    <div class="booking">
+	  <div>
+	    <h2>TOUR DATES</h2>
+	    <p style="opacity:0.60;">Remember to book your tickets!</p>
+      </div>
+	  
+	  <div class="Months">
+        <div class="eachrow clearfix">
+	      <a>September</a>
+		  <a class="differ">Sold Out</a>
+        </div>
+	  
+	    <div class="eachrow clearfix">
+	      <a>October</a>
+		  <a class="differ">Sold Out</a>
+        </div>
+		
+	    <div class="eachrow clearfix">
+	      <a>November</a>
+		  <a style="float:right;" class="badge">3</a>
+        </div>
+		
+      </div>
+<!--Creating Polaroid Images -->  
+	  <div style="margin-bottom:60px;" class="clearfix">
+	
+        <div class="polaroid">
+           <img src="photos/newyork.jpg" alt="photo">
+		    <div class="desc2">
+			  <p><b>New York</b></p>
+			  <p style="opacity:0.60;">Fri 27 Nov 2016</p>
+              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+			  <button id="myBtn" class="button1" onclick="document.getElementById('myModal').style.display='block'">Buy Tickets</button>
+			</div>
+        </div> 
+        
+        <div class="polaroid"> 
+           <img src="photos/paris.jpg" alt="photo">
+		    <div class="desc2">
+			  <p><b>Paris</b></p>
+			  <p style="opacity:0.60;">Sat 28 Nov 2016</p>
+              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+			  <button id="myBtn" class="button1" onclick="document.getElementById('myModal').style.display='block'">Buy Tickets</button>
+			</div>
+        </div> 
+        
+        <div style="margin-right:0" class="polaroid"> 
+           <img src="photos/sanfran.jpg" alt="photo">
+		    <div class="desc2">
+			  <p><b>San Francisco</b></p>
+			  <p style="opacity:0.60;">Sun 29 Nov 2016</p>
+              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+			  <button id="myBtn" class="button1" onclick="document.getElementById('myModal').style.display='block'">Buy Tickets</button>
+			</div>
+        </div>
+      </div> 
+    </div>
+<!--Creating Modal content -->	
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <header class="modal-header"> 
+            <span onclick="document.getElementById('ticketModal').style.display='none'" 
+           class="close">×</span>
+            <h2 class=""><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+          </header>
+          <div class="modal-body">
+            <p style="margin-left:10px;"><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+            <input id="message" type="text" placeholder="How many?">
+            <p style="margin-left:10px;"><label><i class="fa fa-user"></i> Send To</label></p>
+            <input id="message" type="text" placeholder="Enter email">
+            <button class="button1 modal-footer">PAY <i class="fa fa-check"></i></button>
+            <button class="button1" onclick="document.getElementById('myModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+            <p style="float:right;">Need <a href="#" class="w3-text-blue">help?</a></p>
+          </div>
+        </div>
+    </div>
+	
+  </div>
+<!--Creating Contact section -->   
+  <div class="theband response clearfix" id="contact">
+    <div>
+      <h2>CONTACT</h2>
+      <p style="opacity:0.60;">Fan? Drop a note!</p>
+    </div>
+	
+	<div class="contact clearfix">
+      <div class="eachside"> 
+        <i class="fas fa-map-marker-alt iconspace"></i>Chicago, US<br>
+        <i class="fas fa-phone-alt iconspace"></i>Phone: +00 151515<br>
+        <i class="fa fa-envelope iconspace"> </i>Email: mail@mail.com<br>
+      </div>
+	  
+      <div class="eachside form">
+	  
+        <form action="/action_page.php" target="_blank">
+		<div>
+	      <div>
+            <input type="text" id="name1" name="name" placeholder="Name.." required="Name..">
+	      </div>
+	      <div>
+            <input type="text" id="name1" name="Email" placeholder="Email" required="Email"><br>
+	      </div>
+		</div>
+	    <div>
+          <input type="text" id="message" name="Message" placeholder="Message" required="Message">
+	      <button style="float:right" class="button1" type="submit">SEND</button>
+	    </div>
+        </form>
+		
+      </div>  
+    </div>
+  </div>
+  
+<!--Creating Map Image -->  
+  <div class="opacity clearfix">
+    <img src="photos/map.jpg" alt="Map">
+  </div>
+  
+</div>
+<!--Creating Footer with Icons -->  
+<footer class="light-grey">
+  <div class="theband clearfix">
+    <i class="fab fa-facebook-square iconspace" style="font-size:24px"></i>
+    <i class="fab fa-instagram iconspace" style="font-size:24px"></i>
+    <i class="fab fa-snapchat iconspace" style="font-size:24px"></i>
+    <i class="fab fa-pinterest-p iconspace" style="font-size:24px"></i>
+    <i class="fab fa-twitter iconspace" style="font-size:24px"></i>
+    <i class="fab fa-linkedin-in iconspace" style="font-size:24px"></i>
+    <p style="opacity:0.60;">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Moshiur Robin</a></p>
+	<p style="opacity:0.60;">Email: <a href="#none">moshiur251@gmail.com</a></p>
+  </div>
+</footer>
+
+
+<!--Javascript Part -->  
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+// Get the modal
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</body>
+
+</html>
