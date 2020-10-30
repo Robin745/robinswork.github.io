@@ -113,7 +113,7 @@ div{
 	background-color:#f44336;
 }
 /**Making Navbar Responsive**/
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 768px){
 	
    .topnav a:not(:first-child), .dropdown, .dropbtn,.search-container{
     display:none;
@@ -133,7 +133,7 @@ div{
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 	
   .topnav.responsive {
 	  position: relative;
@@ -170,18 +170,19 @@ div{
 }
 
 .textinside{
+    width:100%;
 	position:absolute;
 	bottom:35px;
 	color:white;
-	left:650px;
-	font-size:18px;
+	margin:auto;
+
 }
 img{
 	width:100%;
 	height:auto;
 	position:relative;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 	.textinside{
 		display:none;
 	}
@@ -198,31 +199,39 @@ img{
 }
 /*band images gallery */
 .eachimage{
-	padding:45px;
+	padding:30px;
 	float:left;
 	width:33%;
+	margin:auto;
+	text-align:center;
 }
 
 .eachimage img{
-	width:100%;
-	min-width:200px;
+	min-width:100px;
+	max-width:100%;
 	height:auto;
 	border-radius:5px;
 	
 }
 .desc{
 	padding:15px;
-	text-align:center;
-	font-family:Arial;
+    text-align:center;
+	font-family:"Segoe UI",Arial,sans-serif;
 }
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 1100px) {
+    .eachimage{
+		float:none;
+		width:70%;
+	}
+}
+@media screen and (max-width: 768px) {
 	.theband{
 		width:100%;
 	}
 	.eachimage{
 		width:100%;
 		margin-bottom:0;
-		padding-bottom:0;
+		padding-bottom:10px;
 	}
 }
 
@@ -271,7 +280,7 @@ img{
 	border-radius:50%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 	.booking{
 		width:100%;
 		padding:15px;
@@ -281,6 +290,7 @@ img{
 /**Creating Polaroid Images**/
 .polaroid{
     margin-right:15px;
+	margin-bottom:20px;
 	float:left;
 	width:32%;
 	background-color: white;
@@ -382,7 +392,7 @@ img{
   margin-bottom:16px;
 }
 
-@media (max-width:600px){
+@media (max-width:768px){
 	.modal-content{
 		margin:0 10px;
 		width:auto;
@@ -391,10 +401,14 @@ img{
 		padding-top:50px;
 		}
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 	.polaroid{
 		width:100%;
-		margin-bottom:20px;
+	}
+}
+@media only screen and (max-width: 1600px) {
+	.polaroid{
+		width:100%;
 	}
 }
 
@@ -440,7 +454,7 @@ input[id="name1"]{
 	margin:0;
 	
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 	div .response{
 		padding:10px;
 		margin-top:20px;
@@ -450,8 +464,13 @@ input[id="name1"]{
 		width:100%;
 		padding:5px;
 	}
-	.iconspace{
-		
+	input[id="message"],input[id="name1"]{
+		width:100%;
+	}
+}
+@media only screen and (max-width: 1600px) {
+	div.response{
+		width:70%;
 	}
 	input[id="message"],input[id="name1"]{
 		width:100%;
